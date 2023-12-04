@@ -86,7 +86,7 @@ class ContactApp extends Contacts{
             <div class="container">
                 <div class="contacts__wrapper">
                     <div class="contacts__header">
-                        <h2>Контакты</h2>
+                        <h2>Contacts</h2>
                         <div class="contacts__form">
                             <input tupe="text" class="contact__name" placeholder="Имя">
                             <input tupe="text" class="contact__phone" placeholder="Телефон">
