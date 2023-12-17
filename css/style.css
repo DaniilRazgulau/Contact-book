@@ -132,3 +132,58 @@ body{
     color: #ffffff;
     font-family: Arial;
 }
+
+.btn__edit,
+.btn__delete{
+    background-color: #512da8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn__edit:hover,
+.btn__delete:hover{
+    background-color: #4B0082;
+}
+
+.modal__header,
+.modal__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modal__header{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal__edit__name,
+.modal__edit__phone,
+.modal__edit__email,
+.modal__edit__address{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #eee;
+    margin: 7px 8px;
+}
+
+.modal__cancel__btn,
+.modal__save__btn{
+    background: #512da8;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-inline-start: 5px;
+}
+
+.modal__cancel__btn:hover,
+.modal__save__btn:hover{
+    background: #4B0082;
+}

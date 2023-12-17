@@ -155,10 +155,10 @@ class ContactApp extends Contacts{
                     <div class="contacts__header">
                         <h2>Contacts</h2>
                         <div class="contacts__form">
-                            <input tupe="text" class="contact__name" placeholder="Имя">
-                            <input tupe="text" class="contact__phone" placeholder="Телефон">
-                            <input tupe="email" class="contact__email" placeholder="Email">
-                            <input tupe="text" class="contact__address" placeholder="Адрес">
+                            <input type="text" class="contact__name" placeholder="Имя">
+                            <input type="text" class="contact__phone" placeholder="Телефон">
+                            <input type="email" class="contact__email" placeholder="Email">
+                            <input tpe="text" class="contact__address" placeholder="Адрес">
                             <button class="contact__btn">Добавить контакт</button>
                         </div>
                     </div>
@@ -180,22 +180,22 @@ class ContactApp extends Contacts{
         const name = document.querySelector('.contact__name');
         const phone = document.querySelector('.contact__phone');
         const email = document.querySelector('.contact__email');
-        const addres = document.querySelector('.contact__address');
-        console.log( addres.value )
+        const address = document.querySelector('.contact__address');
+        console.log( address.value )
 
         const userData = {
             id: new Date().getTime().toString(),
             name: name.value,
             phone: phone.value,
             email: email.value,
-            addres: addres.value,
+            address: address.value,
         }
 
         this.add(userData);
         name.value = '';
         phone.value = '';
         email.value = '';
-        addres.value = '';
+        address.value = '';
         this.get();
     }
 
@@ -317,11 +317,11 @@ class Modal{
                 <div class="modal__header">
                     <h3>Редактирование пользователя</h3>
                 </div>
-                <div class"modal__content">
-                    <input type="text" class="modal__edit__name" value="${name}">
-                    <input type="phone" class="modal__edit__phone" value="${phone}">
-                    <input type="email" class="modal__edit__email" value="${email}">
-                    <input type="text" class="modal__edit__address" value="${address}">
+                <div class="modal__content">
+                    <input type="text" class="modal__edit__name" placeholder="Name" value="${name}">
+                    <input type="phone" class="modal__edit__phone" placeholder="Phone" value="${phone}">
+                    <input type="email" class="modal__edit__email" placeholder="Email" value="${email}">
+                    <input type="text" class="modal__edit__address" placeholder="Address" value="${address}">
                     <div class="modal__btns">
                         <button class="modal__cancel__btn">Отмена</button>
                         <button class="modal__save__btn" id="${id}">Сохранить</button>
